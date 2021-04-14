@@ -1,0 +1,17 @@
+<div class="bg-dark border-right p-3 " id="sidebar">
+    <h3 class="text-success">App Gifts</h3>
+    <hr class="text-white">
+    <div *ngIf="historial.length>0">
+      <p class="text-warning small" >Historial de Busqueda</p>
+    </div>
+    
+    <div class="list-group list-reset">
+      
+      <a class=" btn list-group-item list-group-item-action mt-1 mb-1" *ngFor="let historial_i of historial"
+      (click)="buscarhistorial(historial_i)"
+      >
+        {{historial_i |titlecase}}
+      </a>
+    </div>
+
+  </div>
