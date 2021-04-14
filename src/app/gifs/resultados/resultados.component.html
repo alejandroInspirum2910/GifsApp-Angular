@@ -26,8 +26,9 @@
           <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img-top">
           <div class="card-body">
               <p class="card-text">
-                  {{gif.title}}
-                  {{gif.images.hd}}
+                  {{gif.title}} -
+                  {{gif.images.downsized_medium.width}} x 
+                  {{gif.images.downsized_medium.height}}
               </p>
           </div>
       </div>
